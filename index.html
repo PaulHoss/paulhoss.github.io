@@ -52,7 +52,7 @@
         }
 
         section {
-            max-width: 900px;
+            max-width: 1100px;
             margin: 40px auto;
             padding: 0 20px;
         }
@@ -64,13 +64,37 @@
             color: #fff;
         }
 
+        /* Responsive project grid */
+        .project-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        @media (min-width: 600px) {
+            .project-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 900px) {
+            .project-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
         .project {
             background: #1a1a1a;
             padding: 20px;
-            margin-bottom: 20px;
             border-radius: 6px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.4);
             border: 1px solid #222;
+            transition: transform 0.15s ease, box-shadow 0.15s ease;
+        }
+
+        .project:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.6);
         }
 
         .project h3 {
@@ -86,90 +110,3 @@
             text-decoration: underline;
         }
 
-        footer {
-            text-align: center;
-            padding: 30px 0;
-            margin-top: 40px;
-            background: #000;
-            color: #777;
-            border-top: 1px solid #222;
-        }
-
-        .contact a {
-            color: #4da3ff;
-            text-decoration: none;
-        }
-
-        .contact a:hover {
-            text-decoration: underline;
-        }
-    </style>
-</head>
-
-<body>
-
-    <header>
-        <h1>Paul Hoss</h1>
-        <p>Developer • Data & Analytics • Problem Solver</p>
-    </header>
-
-    <nav>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#resume">Résumé</a>
-        <a href="#contact">Contact</a>
-    </nav>
-
-    <section id="about">
-        <h2>About Me</h2>
-        <p>
-            I'm a developer focused on building clean, efficient solutions in data,
-            analytics, and automation. This site highlights my work, experience, and
-            the projects I'm most proud of.
-        </p>
-    </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-
-        <div class="project">
-            <h3>RAM Price Pipeline</h3>
-            <p>
-                A full data pipeline that scrapes RAM pricing, processes it, and
-                publishes dashboards using Evidence and GitHub Pages.
-            </p>
-            <p><a href="https://github.com/PaulHoss/ram-price-pipeline">View on GitHub</a></p>
-            <p>
-                &lt;add dashboard info here>
-            </p>
-            <p><a href="https://paulhoss.github.io/ram-price-pipeline/">View Dashboard</a></p>
-        </div>
-
-        <div class="project">
-            <h3>Project Title</h3>
-            <p>Short description of another project you want to highlight.</p>
-        </div>
-
-    </section>
-
-    <section id="resume">
-        <h2>Résumé</h2>
-        <p>
-            You can download my résumé here:
-            <a href="resume.pdf">resume.pdf</a>
-        </p>
-    </section>
-
-    <section id="contact" class="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:paul@example.com">paul@example.com</a></p>
-        <p>GitHub: <a href="https://github.com/PaulHoss">github.com/PaulHoss</a></p>
-        <p>LinkedIn: <a href="#">Your LinkedIn URL</a></p>
-    </section>
-
-    <footer>
-        © 2026 Paul Hoss — All Rights Reserved
-    </footer>
-
-</body>
-</html>
