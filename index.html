@@ -110,3 +110,97 @@
             text-decoration: underline;
         }
 
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 40px;
+            background: #000;
+            color: #777;
+            border-top: 1px solid #222;
+        }
+
+        .contact a {
+            color: #4da3ff;
+            text-decoration: none;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Paul Hoss</h1>
+        <p>Developer • Data & Analytics • Problem Solver</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#resume">Résumé</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I'm a developer focused on building clean, efficient solutions in data,
+            analytics, and automation. This site highlights my work, experience, and
+            the projects I'm most proud of.
+        </p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="project-grid">
+
+            <div class="project">
+                <h3>Memory Market Monitor</h3>
+                <p>
+                    A full data pipeline that scrapes RAM pricing, processes it with dbt,
+                    stores results in Athena, and publishes dashboards using Evidence.
+                </p>
+                <p><a href="https://github.com/PaulHoss/ram-price-pipeline">View Repo on GitHub</a></p>
+                <p><a href="https://paulhoss.github.io/ram-price-pipeline/">View Dashboard</a></p>
+            </div>
+
+            <div class="project">
+                <h3>Project Placeholder</h3>
+                <p>Short description of another project you want to highlight.</p>
+                <p><a href="#">View Repo</a></p>
+            </div>
+
+            <div class="project">
+                <h3>Another Project</h3>
+                <p>Description for a future project or something you're working on.</p>
+                <p><a href="#">View Repo</a></p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="resume">
+        <h2>Résumé</h2>
+        <p>
+            You can download my résumé here:
+            <a href="resume.pdf">resume.pdf</a>
+        </p>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:paul@example.com">paul@example.com</a></p>
+        <p>GitHub: <a href="https://github.com/PaulHoss">github.com/PaulHoss</a></p>
+        <p>LinkedIn: <a href="#">Your LinkedIn URL</a></p>
+    </section>
+
+    <footer>
+        © 2026 Paul Hoss — All Rights Reserved
+    </footer>
+
+</body>
+</html>
