@@ -64,23 +64,10 @@
             color: #fff;
         }
 
-        /* Responsive project grid */
         .project-grid {
             display: grid;
-            grid-template-columns: 1fr;
             gap: 20px;
-        }
-
-        @media (min-width: 600px) {
-            .project-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
-        @media (min-width: 900px) {
-            .project-grid {
-                grid-template-columns: repeat(3, 1fr);
-            }
+            grid-template-columns: 1fr;
         }
 
         .project {
@@ -147,10 +134,22 @@
     <section id="about">
         <h2>About Me</h2>
         <p>
-            I'm a developer focused on building clean, efficient solutions in data,
-            analytics, and automation. This site highlights my work, experience, and
-            the projects I'm most proud of.
+            I’m Paul Hoss, an Analytics Engineer focused on building automated data pipelines, cloud‑native data models,
+             and reliable analytics systems. I work primarily with Python, SQL, AWS, and dbt, and I enjoy turning messy, 
+             unstructured data into clean, trustworthy datasets and dashboards.
         </p>
+
+        <p>
+            My featured project, the RAM Market Monitor, reflects how I approach engineering: I focus on designing data 
+            workflows that are reliable, automated, and easy to maintain as they scale. I’m especially interested in 
+            creating systems that stay simple and transparent, even as the data grows more complex.
+        </p>
+
+        <p>
+            I’m actively expanding my skills and looking for opportunities to contribute to data engineering, analytics 
+            engineering, or data‑driven product teams.
+        </p>
+
     </section>
 
     <section id="projects">
@@ -161,23 +160,13 @@
             <div class="project">
                 <h3>Memory Market Monitor</h3>
                 <p>
-                    A full data pipeline that scrapes RAM pricing, processes it with dbt,
-                    stores results in Athena, and publishes dashboards using Evidence.
+                    An end-to-end analytics engineering pipeline that uses Python to scrape daily RAM prices from e-commerce 
+                    retailers, archives raw data to an S3 Bronze data lake, transforms it through Silver and Gold layers using 
+                    dbt over AWS Athena, and publishes an interactive price-tracking dashboard to GitHub Pages via Evidence. 
+                    Fully automated with GitHub Actions on a daily schedule.
                 </p>
-                <p><a href="https://github.com/PaulHoss/ram-price-pipeline">View Repo on GitHub</a></p>
+                <p><a href="https://github.com/PaulHoss/ram-price-pipeline">View Repo</a></p>
                 <p><a href="https://paulhoss.github.io/ram-price-pipeline/">View Dashboard</a></p>
-            </div>
-
-            <div class="project">
-                <h3>Project Placeholder</h3>
-                <p>Short description of another project you want to highlight.</p>
-                <p><a href="#">View Repo</a></p>
-            </div>
-
-            <div class="project">
-                <h3>Another Project</h3>
-                <p>Description for a future project or something you're working on.</p>
-                <p><a href="#">View Repo</a></p>
             </div>
 
         </div>
@@ -187,15 +176,15 @@
         <h2>Résumé</h2>
         <p>
             You can download my résumé here:
-            <a href="resume.pdf">resume.pdf</a>
+            <a href="docs/Paul Hoss resume current.pdf">My Resume</a>
         </p>
     </section>
 
     <section id="contact" class="contact">
         <h2>Contact</h2>
-        <p>Email: <a href="mailto:paul@example.com">paul@example.com</a></p>
+        <p>Email: <a href="mailto:paul.hoss.data@gmail.com">paul.hoss.data@gmail.com</a></p>
         <p>GitHub: <a href="https://github.com/PaulHoss">github.com/PaulHoss</a></p>
-        <p>LinkedIn: <a href="#">Your LinkedIn URL</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/paul-hoss/">linkedin.com/in/paul-hoss/</a></p>
     </section>
 
     <footer>
